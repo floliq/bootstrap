@@ -53,11 +53,12 @@ a {
   color: #FFFFFF;
 }
 .text{
-  font-size: 18px;
+  font-size: 16px;
   line-height: 150%;
 }
 .course__text{
   margin-bottom: 70px;
+  font-size: 18px;
   font-weight: normal;
   color: #FFFFFF;
 }
@@ -71,4 +72,44 @@ a {
   font-size: 18px;
   line-height: 21px;
   color: #FFFFFF;
+}
+.subheading{
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 100%;
+}
+.benefits{
+  padding: 80px 0;
+  background-color: white;
+}
+.benefits__subheading{
+  margin-bottom:30px;
+  color: #2E2B44;
+}
+.benefits__text{
+  color: #666666;
+}
+.benefits__row{
+  margin-bottom:30px;
+}
+.benefits__col{
+  display: flex;
+  align-items: center;
+}
+.benefits__desc{
+  padding: 16px 0;
+  padding-left:110px;
+  font-weight: bold;
+  color: #666666;
+   background-position:left center; 
+   background-repeat: no-repeat;
+}
+.benefits__desc-one{
+  background-image: url(../img/benefits/benefits__one.svg);
+}
+.benefits__desc-two{
+  background-image: url(../img/benefits/benefits__two.svg)
+}
+.benefits__desc-thre{
+  background-image: url(../img/benefits/benefits__thre.svg)
 }
