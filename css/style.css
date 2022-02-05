@@ -16,7 +16,7 @@ img {
 }
 
 .container {
-  max-width: 1110px;
+  max-width: 1130px;
 }
 
 .menu {
@@ -62,6 +62,11 @@ img {
   line-height: 100%;
   color: #ffffff;
 }
+.about__col{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end ;
+}
 
 .text {
   font-size: 16px;
@@ -85,13 +90,17 @@ img {
   cursor: pointer;
 }
 
+.about__image{
+  max-width: 100%;
+}
+
 .benefits {
-  padding: 80px 0;
+  padding: 80px 0 75px;
   background: #ffffff;
 }
 
 .benefits__content {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .subheading {
@@ -102,7 +111,8 @@ img {
 
 .benefits__subheading {
   color: #2e2b44;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  max-width: 380px;
 }
 
 .benefits_desc {
@@ -133,12 +143,12 @@ img {
 
 .teachers {
   background: #212133;
-  padding: 80px 0;
+  padding: 80px 0 75px;
 }
 
 .tearchers__subheading {
   color: #ffffff;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .teachers__logo {
@@ -147,7 +157,7 @@ img {
 }
 
 .teachers__name {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-size: 18px;
   line-height: 150%;
   color: #ffffff;
@@ -158,13 +168,13 @@ img {
 }
 
 .courses {
-  padding: 80px 0;
+  padding: 70px 0 85px;
   background: #ffffff;
 }
 
 .courses__subheading {
   color: #212133;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .courses__column {
@@ -203,7 +213,7 @@ img {
 }
 
 .courses__name {
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   font-weight: bold;
   font-size: 18px;
   line-height: 150%;
@@ -212,7 +222,7 @@ img {
 
 .courses__text {
   color: #666666;
-  margin-bottom: 32px;
+  margin-bottom: 50px;
 }
 
 .courses__btn {
@@ -231,7 +241,7 @@ img {
 .social__links {
   display: flex;
   justify-content: center;
-  padding: 30px 0;
+  padding: 30px 0 20px;
   background-color: #2e2b44;
 }
 
@@ -250,4 +260,11 @@ img {
 
 .social__reg {
   color: #3f2aff;
+}
+
+
+@media(max-width:768px){
+  .about__image{
+    max-width: 312px;
+  }
 }
