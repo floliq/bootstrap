@@ -1,115 +1,253 @@
-/* CodeStyle
-1 - position
-2 - display
-3 - width / height
-4 - margin padding
-5 - все остальное
-*/
-
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
+
 a {
   text-decoration: none;
 }
-.container{
-  max-width: 1140px;
+
+img {
+  max-width: 100%;
 }
+
+.container {
+  max-width: 1110px;
+}
+
 .menu {
   background-color: #3f2aff;
 }
+
 .menu__content {
   height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.menu__bar {
+  display: flex;
+}
+
 .menu__link {
-  font-weight: normal;
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
 }
+
 .menu__link:not(:last-child) {
   margin-right: 56px;
 }
-.course{
-  background: radial-gradient(44.07% 44.07% at 67.78% 55.93%, #555681 0%, #212133 100%);
+
+.about {
+  background: radial-gradient(
+    44.07% 44.07% at 67.78% 55.93%,
+    #555681 0%,
+    #212133 100%
+  );
 }
-.course__content{
-  padding: 15px 0 12px;
+
+.about__content {
+  padding: 130px 0;
 }
-.course__col-left{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.course__heading{
+
+.about__heading {
   margin: 0 0 30px;
-  font-weight: bold;
   font-size: 60px;
   line-height: 100%;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.text{
+
+.text {
   font-size: 16px;
   line-height: 150%;
 }
-.course__text{
-  margin-bottom: 70px;
+
+.about__text {
+  margin-bottom: 60px;
   font-size: 18px;
-  font-weight: normal;
-  color: #FFFFFF;
+  color: #ffffff;
 }
-.course__btn{
-  width: fit-content;
-  padding: 24px 75.5px;
-  background: #3F2AFF;
+
+.about__btn {
+  padding: 24px 76px;
+  background: #3f2aff;
   border-radius: 20px;
   border: none;
-  font-weight: bold;
   font-size: 18px;
   line-height: 21px;
-  color: #FFFFFF;
+  color: #ffffff;
+  cursor: pointer;
 }
-.subheading{
+
+.benefits {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.benefits__content {
+  margin-bottom: 30px;
+}
+
+.subheading {
   font-weight: bold;
   font-size: 40px;
   line-height: 100%;
 }
-.benefits{
-  padding: 80px 0;
-  background-color: white;
+
+.benefits__subheading {
+  color: #2e2b44;
+  margin-bottom: 30px;
 }
-.benefits__subheading{
-  margin-bottom:30px;
-  color: #2E2B44;
-}
-.benefits__text{
+
+.benefits_desc {
   color: #666666;
 }
-.benefits__row{
-  margin-bottom:30px;
-}
-.benefits__col{
-  display: flex;
-  align-items: center;
-}
-.benefits__desc{
+
+.benefits__text {
   padding: 16px 0;
-  padding-left:110px;
+  padding-left: 110px;
   font-weight: bold;
+  font-size: 16px;
+  line-height: 120%;
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.benefits__text-first {
+  background-image: url(../img/benefits/benefits_one.svg);
+}
+
+.benefits__text-second {
+  background-image: url(../img/benefits/benefits_two.svg);
+}
+
+.benefits__text-third {
+  background-image: url(../img/benefits/benefits_three.svg);
+}
+
+.teachers {
+  background: #212133;
+  padding: 80px 0;
+}
+
+.tearchers__subheading {
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.teachers__logo {
+  margin-bottom: 30px;
+  border-radius: 22px 22px 0px 0px;
+}
+
+.teachers__name {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 150%;
+  color: #ffffff;
+}
+
+.teachers__text {
+  color: #85859b;
+}
+
+.courses {
+  padding: 80px 0;
+  background: #ffffff;
+}
+
+.courses__subheading {
+  color: #212133;
+  margin-bottom: 30px;
+}
+
+.courses__column {
+  display: flex;
+}
+
+.courses__column:nth-child(-n + 2) {
+  margin-bottom: 30px;
+}
+
+.courses__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 210px 30px 30px;
+  background-color: #edf0f9;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+  background-position: top center;
+}
+
+.courses__content-first {
+  background-image: url("../img/courses/courses1.jpg");
+}
+
+.courses__content-second {
+  background-image: url("../img/courses/courses2.jpg");
+}
+
+.courses__content-third {
+  background-image: url("../img/courses/courses3.jpg");
+}
+
+.courses__content-fourth {
+  background-image: url("../img/courses/courses4.jpg");
+}
+
+.courses__name {
+  margin-bottom: 15px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 150%;
+  color: #212133;
+}
+
+.courses__text {
   color: #666666;
-   background-position:left center; 
-   background-repeat: no-repeat;
+  margin-bottom: 32px;
 }
-.benefits__desc-one{
-  background-image: url(../img/benefits/benefits__one.svg);
+
+.courses__btn {
+  width: fit-content;
+  padding: 20px 59px;
+  background: #3f2aff;
+  border-radius: 20px;
+  border: none;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  cursor: pointer;
 }
-.benefits__desc-two{
-  background-image: url(../img/benefits/benefits__two.svg)
+
+.social__links {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  background-color: #2e2b44;
 }
-.benefits__desc-thre{
-  background-image: url(../img/benefits/benefits__thre.svg)
+
+.social__link:not(:last-child) {
+  margin-right: 30px;
+}
+
+.social__text {
+  padding-top: 3px;
+  text-align: center;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  color: #2e2b44;
+}
+
+.social__reg {
+  color: #3f2aff;
 }
