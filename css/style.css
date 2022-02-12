@@ -45,6 +45,7 @@ img {
 }
 
 .about {
+  padding: 15px 0 12px;
   background: radial-gradient(
     44.07% 44.07% at 67.78% 55.93%,
     #555681 0%,
@@ -52,20 +53,15 @@ img {
   );
 }
 
-.about__content {
-  padding: 130px 0;
-}
-
 .about__heading {
-  margin: 0 0 30px;
+  margin: 0 0 25px;
   font-size: 60px;
   line-height: 100%;
   color: #ffffff;
 }
-.about__col{
+.about__col {
   display: flex;
   align-items: center;
-  justify-content: flex-end ;
 }
 
 .text {
@@ -84,13 +80,14 @@ img {
   background: #3f2aff;
   border-radius: 20px;
   border: none;
+  font-weight: bold;
   font-size: 18px;
   line-height: 21px;
   color: #ffffff;
   cursor: pointer;
 }
 
-.about__image{
+.about__image {
   max-width: 100%;
 }
 
@@ -101,6 +98,10 @@ img {
 
 .benefits__content {
   margin-bottom: 15px;
+}
+
+.benefits__col {
+  display: flex;
 }
 
 .subheading {
@@ -143,7 +144,7 @@ img {
 
 .teachers {
   background: #212133;
-  padding: 80px 0 75px;
+  padding: 75px 0 75px;
 }
 
 .tearchers__subheading {
@@ -168,7 +169,7 @@ img {
 }
 
 .courses {
-  padding: 70px 0 85px;
+  padding: 75px 0 85px;
   background: #ffffff;
 }
 
@@ -262,9 +263,70 @@ img {
   color: #3f2aff;
 }
 
+@media (max-width: 1024px) {
+  .about {
+    padding: 130px 0;
+  }
 
-@media(max-width:768px){
-  .about__image{
-    max-width: 312px;
+  .about__heading {
+    margin-bottom: 15px;
+    font-size: 50px;
+  }
+
+  .about__col-right {
+    justify-content: flex-end;
+  }
+
+  .benefits__text {
+    padding: 95px 0 0;
+    background-position: top left;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 715px;
+  }
+
+  .benefits__subheading {
+    margin-bottom: 22px;
+  }
+  .benefits__content {
+    margin-bottom: 20px;
+  }
+  .teachers__block:nth-child(1),
+  .teachers__block:nth-child(2) {
+    margin-bottom: 20px;
+  }
+
+  .courses__text {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 700px) {
+  .menu {
+    height: 133px;
+  }
+
+  .menu__content {
+    flex-direction: column;
+  }
+
+  .menu__main {
+    padding: 30px 0;
+  }
+
+  .about__col-right {
+    display: none;
+  }
+}
+
+@media (max-width: 545px) {
+  .menu {
+    height: 80px;
+  }
+
+  .menu__bar {
+    display: none;
   }
 }

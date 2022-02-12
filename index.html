@@ -14,7 +14,7 @@
     <header class="menu">
       <div class="container menu__container">
         <div class="menu__content">
-          <a href="#" class="menu__link">
+          <a href="#" class="menu__main">
             <svg
               width="94"
               height="21"
@@ -43,19 +43,26 @@
       <section id="about" class="about">
         <div class="container">
           <div class="row">
-            <div class="col-5">
+            <div class="col-5 col-md-6 col-lg-5 about__col">
               <div class="about__content">
                 <h1 class="about__heading">Курсы 3D моделирования</h1>
                 <p class="about__text text">
-                  Следует отметить, что существующая теория
-                  способствует повышению качества благоприятных перспектив.
-                  Не следует, однако, забывать.
+                  Следует отметить, что существующая теория способствует
+                  повышению качества благоприятных перспектив. Не следует,
+                  однако, забывать.
                 </p>
                 <button class="about__btn">Выбрать курс</button>
               </div>
             </div>
-            <div class="col-7 about__col">
-                <img src="img/background.png" alt="Картинка"  class="about__image"/>
+            <div class="col-7 col-md-6 col-lg-7 about__col about__col-right">
+              <picture>
+                <source srcset="img/course-md.png" media="(max-width: 768px)" />
+                <img
+                  src="img/background.png"
+                  alt="Картинка"
+                  class="about__image"
+                />
+              </picture>
             </div>
           </div>
         </div>
@@ -63,15 +70,21 @@
       <section class="benefits">
         <div class="container">
           <div class="row benefits__content">
-            <div class="col-2">
+            <div
+              class="col-4 col-md-4 col-lg-2 d-flex justify-content-center align-items-center"
+            >
               <picture>
+                <source
+                  srcset="img/benefits/benefits-md.png"
+                  media="(max-width: 768px)"
+                />
                 <img
                   src="img/benefits/benefits_logo.png"
                   alt="Картинка цилиндров"
                 />
               </picture>
             </div>
-            <div class="col-7">
+            <div class="col-7 col-md-8 col-lg-7">
               <h2 class="benefits__subheading subheading">
                 Преимущества обучения в skillbox
               </h2>
@@ -79,24 +92,24 @@
                 Имеется спорная точка зрения, гласящая примерно следующее:
                 акционеры крупнейших компаний, которые представляют собой яркий
                 пример континентально-европейского типа политической культуры,
-                будут рассмотрены  исключительно в разрезе маркетинговых
+                будут рассмотрены исключительно в разрезе маркетинговых
                 предпосылок.
               </p>
             </div>
           </div>
           <div class="row">
-            <div class="col-4">
+            <div class="col-4 benefits__col">
               <p class="benefits__text benefits__text-first">
                 Результат вашего обучения является самым важным для нас
                 приоритетом
               </p>
             </div>
-            <div class="col-4">
+            <div class="col-4 benefits__col">
               <p class="benefits__text benefits__text-second">
                 Лично познакомитесь с одним из своих будущих преподавателей
               </p>
             </div>
-            <div class="col-4">
+            <div class="col-4 benefits__col">
               <p class="benefits__text benefits__text-third">
                 Значимость этих проблем очевидна, поэтому стоит всегда быть
                 внимательным
@@ -112,13 +125,20 @@
               Преподаватели курсов
             </h2>
             <div class="row">
-              <div class="col-3">
+              <div class="col-6 col-lg-3 d-flex teachers__block">
                 <div class="teachers__info">
-                  <img
-                    class="teachers__logo"
-                    src="img/teachers/teacher1.jpg"
-                    alt="Преподаватель 1"
-                  />
+                  <picture>
+                    <source
+                      srcset="img/teachers/teacher1md.jpg"
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      class="teachers__logo"
+                      src="img/teachers/teacher1.jpg"
+                      alt="Преподаватель 1"
+                    />
+                  </picture>
+
                   <h3 class="teachers__name">Владимир Петров</h3>
                   <p class="teachers__text text">
                     Лишь непосредственные участники технического прогресса
@@ -127,13 +147,20 @@
                   </p>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-6 col-lg-3 d-flex teachers__block">
                 <div class="teachers__info">
-                  <img
-                    class="teachers__logo"
-                    src="img/teachers/teacher2.jpg"
-                    alt="Преподаватель 2"
-                  />
+                  <picture>
+                    <source
+                      srcset="img/teachers/teacher2md.jpg"
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      class="teachers__logo"
+                      src="img/teachers/teacher2.jpg"
+                      alt="Преподаватель 2"
+                    />
+                  </picture>
+
                   <h3 class="teachers__name">Денис Сергеев</h3>
                   <p class="teachers__text text">
                     Безусловно, разбавленное изрядной долей эмпатии,
@@ -141,13 +168,20 @@
                   </p>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-6 col-lg-3 d-flex teachers__block">
                 <div class="teachers__info">
-                  <img
-                    class="teachers__logo"
-                    src="img/teachers/teacher3.jpg"
-                    alt="Преподаватель 3"
-                  />
+                  <picture>
+                    <source
+                      srcset="img/teachers/teacher3md.jpg"
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      class="teachers__logo"
+                      src="img/teachers/teacher3.jpg"
+                      alt="Преподаватель 3"
+                    />
+                  </picture>
+
                   <h3 class="teachers__name">Михаил Андреев</h3>
                   <p class="teachers__text text">
                     Ясность нашей позиции очевидна: высокое качество позиционных
@@ -155,13 +189,20 @@
                   </p>
                 </div>
               </div>
-              <div class="col-3">
+              <div class="col-6 col-lg-3 d-flex teachers__block">
                 <div class="teachers__info">
-                  <img
-                    class="teachers__logo"
-                    src="img/teachers/teacher4.jpg"
-                    alt="Преподаватель 4"
-                  />
+                  <picture>
+                    <source
+                      srcset="img/teachers/teacher4md.jpg"
+                      media="(max-width: 768px)"
+                    />
+                    <img
+                      class="teachers__logo"
+                      src="img/teachers/teacher4.jpg"
+                      alt="Преподаватель 4"
+                    />
+                  </picture>
+
                   <h3 class="teachers__name">Константин Дмитриев</h3>
                   <p class="teachers__text text">
                     Мы вынуждены отталкиваться от того, что существующая теория,
